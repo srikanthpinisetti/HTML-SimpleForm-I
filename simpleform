@@ -1,0 +1,80 @@
+<!-- Determine the version of Html being used by the User to the browser -->
+<!DOCTYPE html>
+
+<html lang="en">
+<!--Head contains "Title", "Meta-Used to DESCRIBE the page content in the Web Browser", "link/", "style/ - CSS", "script - Javasript" -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeerHub</title>
+
+</head>
+
+<!-- Main Body -->
+<body>
+    <div>
+        <h2><center>Simple Registration form</center></h2>
+    </div>
+    
+    <!--Start form content -->
+    <!-- center tag is used to align the data at the center of page -->
+    <!-- div tag is used to divide the lines -->
+    <center>
+    <form name="registration_form"> 
+            <div>
+                <label for="firstname"> First Name : </label>
+                <input type="text" placeholder="Enter your First Name" required autofocus maxlength="15"> 
+            </div><br><br>
+
+            <div>
+                <label for="lastname"> Last Name :</label>
+                <input type="text" placeholder="Enter the Last Name" required autofocus maxlength="15">
+            </div><br><br>
+
+            <div>
+                <label for="password"> Password :</label>
+                <input type="password" placeholder="Enter your Password" required pattern="[A-Za-z]{3}" autofocus maxlength="10">
+            </div><br><br>
+
+            <div>
+                <label for="gender"> Gender :  </label>
+                <input type="radio" value="male" name= "gender" required > Male
+                <input type="radio" value="female" name= "gender" > Female
+                <input type="radio" value="others" name= "gender" > Others
+            </div><br><br>
+            
+            <div>
+                <label for="dropdown"> Section : </label>
+                <select name="drppdown" id="dropdown">
+                    <option> Select </option>
+                    <option> A </option>>
+                    <option> B </option>
+                    <option> C </option>
+                </select>
+            </div><br><br>
+
+            <div>
+                <label for="dropdowndatachangeble"> Department : </label>
+                <input list="datalist" name="dlist" id="dlist">
+                <datalist id="datalist">
+                    <option value="ECE"></option>
+                    <option value="CSC"></option>
+                    <option value="Aeronatical"></option>
+                    <option value="Mechanical"></option>
+                    <option value="Automobile"></option>
+                </datalist>
+            </div><br><br>
+
+            <div>
+                <label for="address"> Address : </label>
+                <textarea name="textarea" id="address" cols="30" rows="5"></textarea>
+            </div>
+            <br><br>
+            <button type="submit"> Submit </button>
+            <button type="Reset"> Reset </button>
+
+    </form>
+</center>
+</body>
+</html>
